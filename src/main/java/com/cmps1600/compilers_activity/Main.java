@@ -2,18 +2,21 @@ package com.cmps1600.compilers_activity;
 
 public class Main {
 
-    public static void Main(String[] args) {
-        Character hero = Character();
-        hero.setName("Aria")
-        hero.setHealth("full");
-        System.out.println(hero.health);
+    public static void main(String[] args) {
+        Character hero = new Character();
+        hero.setName("Aria");
+        hero.setHealth(100);
+        System.out.println(hero.getHealth());
 
-        int level = getHealth();
+        int level = hero.getHealth();
 
-        status = "Level: " + level;
-        System.out.println(Status);
+        String status = "Level: " + level;
+        System.out.println(status);
 
-        int bonus;
+        int bonus = 5;
         System.out.println(bonus);
+
+        float a = 2;
+        System.out.println(a/0);
     }
 }

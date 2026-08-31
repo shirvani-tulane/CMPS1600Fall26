@@ -3,7 +3,7 @@ package com.cmps1600.compilers_activity;
 public class Character {
 
     private String name;
-    private int health
+    private int health;
 
     public void setName(String name) {
         this.name = name;
@@ -11,6 +11,7 @@ public class Character {
 
     public String getName() {
         String label = "Name: " + name;
+        return label;
     }
 
     public void setHealth(int health) {
