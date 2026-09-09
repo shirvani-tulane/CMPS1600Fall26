@@ -15,8 +15,5 @@ public class Main {
 
         int bonus = 5;
         System.out.println(bonus);
-
-        float a = 2;
-        System.out.println(a/0);
     }
 }
