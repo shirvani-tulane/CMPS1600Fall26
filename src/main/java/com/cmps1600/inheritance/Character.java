@@ -9,6 +9,7 @@ public class Character {
     public Character(String name, int health) {
         this.name = name;
         this.health = health;
+        System.out.println("character constructor");
     }
 
     public Character(String name) {
@@ -17,4 +18,8 @@ public class Character {
 
     public String getName()  { return name; }
     public int getHealth()   { return health; }
+    @Override
+    public String toString(){
+        return name + health;
+    }
 }
