@@ -1,26 +1,26 @@
-package com.cmps1600.abstraction;
+package com.cmps1600.fightingpit;
 
 public class Warrior extends Character implements Attacker {
     private int fortitude;
-    private int baseDamage;
+    private final int baseDamage;
+
     public Warrior(String name, int health, int fortitude, int baseDamage) {
         super(name, health);
         this.fortitude = fortitude;
         this.baseDamage = baseDamage;
     }
 
-    @Override
-    public void cast(){
+    public int getHealth() {
+        return health + fortitude;
+    }
+
+    public void cast() {
+        // Warrior steels itself, gaining health.
         health += fortitude;
     }
 
-    @Override
-    public int dealDamage(){
+    public int dealDamage() {
         return baseDamage;
-    }
-
-    public int getHealth() {
-        return health + fortitude;
     }
 
     public String toString() {

@@ -1,4 +1,4 @@
-package com.cmps1600.abstraction;
+package com.cmps1600.fightingpit;
 
 public abstract class Character {
     private String name;
@@ -9,10 +9,18 @@ public abstract class Character {
         this.health = health;
     }
 
-    public abstract void cast();
-
     public String getName() { return name; }
     public int getHealth()  { return health; }
+
+    public void takeDamage(int amount) {
+        health = health - amount;
+    }
+
+    public boolean isAlive() {
+        return health > 0;
+    }
+
+    public abstract void cast();
 
     public String toString() {
         return name + " (hp " + health + ")";

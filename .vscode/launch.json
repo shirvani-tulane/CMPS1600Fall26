@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Abstraction",
+            "request": "launch",
+            "mainClass": "com.cmps1600.abstraction.Main",
+            "projectName": "fall26"
+        },
+        {
+            "type": "java",
+            "name": "Compilers",
+            "request": "launch",
+            "mainClass": "com.cmps1600.compilers_activity.Main",
+            "projectName": "fall26"
+        },
+        {
+            "type": "java",
+            "name": "Encapsulation",
+            "request": "launch",
+            "mainClass": "com.cmps1600.encapsulation.Main",
+            "projectName": "fall26"
+        },
+        {
+            "type": "java",
+            "name": "Arena",
+            "request": "launch",
+            "mainClass": "com.cmps1600.fightingpit.Arena",
+            "projectName": "fall26"
+        },
+        {
+            "type": "java",
+            "name": "Inheritnce",
+            "request": "launch",
+            "mainClass": "com.cmps1600.inheritance.Main",
+            "projectName": "fall26"
+        }
+    ]
+}
